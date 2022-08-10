@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Todo } from 'src/app/shared/interfaces/todo';
 @Component({
   selector: 'app-todo',
