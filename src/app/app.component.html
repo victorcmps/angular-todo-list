@@ -1,9 +1,11 @@
-<app-sidebar></app-sidebar>
+<div #mode class="container dark-mode">
+    <app-sidebar (toggleMode)="toggleMode($event)"></app-sidebar>
 
-<div class="page__header">
-    <h2 class="page__title">Board 1</h2>
-    <app-button icon="add_circle" label="Add new task"></app-button>
-</div>
-<div class="page__container">
-    <router-outlet></router-outlet>
+    <div class="page__header">
+        <h2 class="page__title">Board 1</h2>
+        <app-button icon="add_circle" label="Add new task"></app-button>
+    </div>
+    <div class="page__wrapper">
+        <router-outlet></router-outlet>
+    </div>
 </div>

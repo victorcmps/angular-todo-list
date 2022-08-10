@@ -12,4 +12,11 @@ export class SwitchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleAriaState(event: MouseEvent) {
+    let element = (event.target as HTMLInputElement);
+    let state = element.getAttribute('aria-checked');
+    let isState = (state === 'true');
+    element.setAttribute('aria-checked', isState ? 'false' : 'true');
+  }
+
 }

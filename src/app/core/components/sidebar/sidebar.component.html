@@ -12,7 +12,9 @@
     </ul>
     <div class="sidebar__switch">
         <span class="material-symbols-outlined">dark_mode</span>
-        <app-switch></app-switch>
+        <span (click)="toggleDarkMode($event)">
+            <app-switch></app-switch>
+        </span>
         <span class="material-symbols-outlined">light_mode</span>
     </div>
 </nav>

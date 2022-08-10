@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +7,16 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  @Output() toggleMode = new EventEmitter<boolean>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleDarkMode(event: MouseEvent) {
+    const element = event.target as HTMLInputElement;
+    let toggleState = (element.ariaChecked === 'true');
+    this.toggleMode.emit(toggleState);
+  }
 }

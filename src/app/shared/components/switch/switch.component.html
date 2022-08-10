@@ -1,4 +1,5 @@
 <label class="toggle">
-    <input class="toggle-checkbox" type="checkbox">
+    <input class="toggle-checkbox" role="switch" type="checkbox" aria-checked="false"
+        (click)="toggleAriaState($event)">
     <div class="toggle-switch"></div>
 </label>
