@@ -1,10 +1,18 @@
 .todo-card {
+    width: 100%;
     background-color: var(--background-accent);
+    color: var(--color-font);
     padding: 24px;
     border-radius: 12px;
 
     &__title {
         font-size: 18px;
         font-weight: 700;
+    }
+
+    &__description {
+        margin-top: 16px;
+        font-size: 14px;
+        color: var(--color-accent);
     }
 }
