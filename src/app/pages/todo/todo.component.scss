@@ -1,6 +1,5 @@
 .todo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     column-gap: 16px;
 
     &__column.cdk-drop-list-dragging &__card:not(.cdk-drag-placeholder) {
@@ -13,10 +12,7 @@
     }
 
     &__column {
-        margin: 0 25px 25px 0;
-        display: inline-block;
-        vertical-align: top;
-
+        width: 480px;
         &--title {
             margin-bottom: 16px;
         }
