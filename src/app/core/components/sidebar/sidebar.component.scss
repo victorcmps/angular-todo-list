@@ -1,0 +1,49 @@
+.sidebar {
+    background-color: var(--background-accent);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    padding-top: 40px;
+
+    &__switch { 
+        position: absolute;
+        bottom: 80px;
+        left: 24px;
+    }
+
+    &__title {
+        color: var(--color-accent);
+        margin-left: 24px;
+        margin-bottom: 24px;
+        font-weight: 700;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 16px 24px;
+        margin: 12px 12px 12px 0px;
+        color: var(--color-accent);
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        transition: 0.2s all;
+        cursor: pointer;
+
+        &, .material-symbols-outlined {
+            font-size: 16px;
+        }
+
+        .item {
+            &__text {
+                margin-left: 16px;
+            }
+        }
+
+        &.active, &:hover {
+            background-color: var(--color-primary);
+            color: #FFFFFF;
+        }
+    }
+}
