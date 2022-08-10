@@ -1,0 +1,21 @@
+.page {
+    &__header {
+        height: 100px;
+        background: var(--background-accent);
+        border-left: 1px solid #ffffff1c;
+        margin-left: 250px;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 300px);
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    &__container {
+        margin-top: 24px;
+        margin-left: calc(250px + 24px);
+    }
+}

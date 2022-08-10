@@ -1,0 +1,21 @@
+.todo-button {
+    padding: 16px 24px;
+    border-radius: 32px;
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    border: 0;
+    font-weight: 700;
+    transition: 0.2s all;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+    .material-symbols-outlined {
+        margin-right: 6px;
+    }
+
+    &:hover {
+        background-color: #FFFFFF;
+        color: var(--color-primary);
+    }
+}

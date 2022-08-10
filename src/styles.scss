@@ -78,7 +78,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
     margin: 0;
     padding: 0;
     border: 0;
@@ -133,6 +134,7 @@ table {
 
 body {
     background-color: var(--background-primary);
+    color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
     .material-symbols-outlined {
         font-variation-settings:
