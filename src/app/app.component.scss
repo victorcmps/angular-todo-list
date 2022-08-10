@@ -7,7 +7,6 @@
         padding: 0 24px;
         display: flex;
         align-items: center;
-        width: calc(100% - 300px);
         justify-content: space-between;
     }
     &__title {
@@ -17,5 +16,9 @@
     &__container {
         margin-top: 24px;
         margin-left: calc(250px + 24px);
+    }
+
+    &__header, &__container {
+        width: calc(100% - 300px);
     }
 }

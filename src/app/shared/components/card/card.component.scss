@@ -1,0 +1,10 @@
+.todo-card {
+    background-color: var(--background-accent);
+    padding: 24px;
+    border-radius: 12px;
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
